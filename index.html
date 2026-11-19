@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkyShield AI | Home</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body data-page="home" data-root="">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-shield-fill-check"></i> SkyShield AI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#study">The Study</a></li>
+          <li class="nav-item"><a class="nav-link" href="#levels">Risk Levels</a></li>
+          <li class="nav-item"><a class="nav-link" href="#route">Route</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item auth-out"><a class="btn btn-outline-secondary btn-sm" href="pages/login.html">Login</a></li>
+          <li class="nav-item auth-out"><a class="btn btn-brand btn-sm" href="pages/signup.html">Sign Up</a></li>
+          <li class="nav-item dropdown auth-in d-none">
+            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button" data-dd aria-expanded="false">
+              <img src="assets/images/students.jpg" class="rounded-circle" width="36" height="36" style="object-fit:cover" alt="Profile">
+              <span class="uFull"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow acct-menu">
+              <li><span class="dropdown-item-text text-muted uMail"></span></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="acctBox"></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="pages/dashboard.html">Dashboard</a></li>
+              <li><a class="dropdown-item" href="pages/dashboard.html#eval">Usability Survey</a></li>
+              <li><a class="dropdown-item" href="#" data-logout>Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container text-center text-lg-start">
+      <div class="row">
+        <div class="col-lg-8">
+          <span class="badge bg-warning text-dark mb-3"><i class="bi bi-wifi-off"></i> Works offline</span>
+          <h1 class="display-4 fw-bold">Know the weather risk before you leave for school.</h1>
+          <p class="lead my-4">SkyShield AI checks heavy rain, thunderstorms and extreme heat, rates your risk as Low, Moderate or High, and gives you a personal preparedness plan.</p>
+          <a href="pages/signup.html" class="btn btn-brand btn-lg me-2 auth-out"><i class="bi bi-rocket-takeoff me-1"></i> Get Started</a>
+          <a href="pages/dashboard.html" class="btn btn-brand btn-lg me-2 auth-in d-none"><i class="bi bi-speedometer2 me-1"></i> Open Dashboard</a>
+          <a href="#features" class="btn btn-outline-light btn-lg"><i class="bi bi-arrow-down-circle me-1"></i> Learn More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">What SkyShield AI Does</h2>
+        <p class="text-muted">An intelligent weather risk and preparedness system for students.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3"><div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
+          <span class="feature-icon mx-auto mb-3"><i class="bi bi-cloud-lightning-rain"></i></span><h5>Risk Analysis</h5>
+          <p class="text-muted mb-0">Weighs weather, rain chance, heat, travel and belongings.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
+          <span class="feature-icon mx-auto mb-3"><i class="bi bi-speedometer2"></i></span><h5>Risk Levels</h5>
+          <p class="text-muted mb-0">A 0-100 score classified as Low, Moderate or High.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
+          <span class="feature-icon mx-auto mb-3"><i class="bi bi-person-check"></i></span><h5>Personalized Tips</h5>
+          <p class="text-muted mb-0">Advice for walking, riding or commuting, plus a checklist.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
+          <span class="feature-icon mx-auto mb-3"><i class="bi bi-bell"></i></span><h5>Severe Alerts</h5>
+          <p class="text-muted mb-0">On-screen warnings for dangerous weather conditions.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Study -->
+  <section id="study" class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="assets/images/students.jpg" class="img-fluid rounded-4 shadow" alt="Students getting ready for school">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold">About the Study</h2>
+          <p class="text-muted">Weather affects students' safety, attendance and travel. General forecasts rarely say what to prepare, so SkyShield AI turns weather conditions into clear risk levels and personal recommendations.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Analyze rain, thunderstorm and heat risks</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Classify risks as low, moderate or high</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Give personalized alerts and preparation tips</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Improve awareness before travelling to school</li>
+          </ul>
+          <div class="accordion mt-3" id="acc">
+
+  <!-- Who Benefits -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed"
+              type="button"
+              data-acc="#a1"
+              aria-expanded="false"
+              aria-controls="a1">
+        Who benefits?
+      </button>
+    </h2>
+
+    <div id="a1"
+         class="accordion-collapse collapse"
+         aria-labelledby="headingOne">
+      <div class="accordion-body">
+        Students, teachers, school administrators, parents and guardians, and future researchers.
+      </div>
+    </div>
+  </div>
+
+  <!-- Limitations -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed"
+              type="button"
+              data-acc="#a2"
+              aria-expanded="false"
+              aria-controls="a2">
+        Limitations
+      </button>
+    </h2>
+
+    <div id="a2"
+         class="accordion-collapse collapse"
+         aria-labelledby="headingTwo">
+      <div class="accordion-body">
+        <ul class="mb-0">
+          <li>This offline version uses the weather values you enter.</li>
+          <li>It does not download live weather forecasts.</li>
+          <li>Weather information may not always be completely accurate.</li>
+          <li>It does not replace official PAGASA or local advisories.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5"><h2 class="fw-bold">How It Works</h2></div>
+      <div class="row g-4 text-center">
+        <div class="col-md-4"><span class="step-num mb-3">1</span><h5>Create an account</h5><p class="text-muted">Sign up in seconds. Your account is saved on your device, so it works offline.</p></div>
+        <div class="col-md-4"><span class="step-num mb-3">2</span><h5>Enter today's conditions</h5><p class="text-muted">Weather, rain chance, temperature, how you travel and how long your trip is.</p></div>
+        <div class="col-md-4"><span class="step-num mb-3">3</span><h5>Get your report</h5><p class="text-muted">See your risk score, alerts, tips and a before-school checklist.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risk levels -->
+  <section id="levels" class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center mb-5"><h2 class="fw-bold">Risk Levels</h2><p class="text-muted">Every check gives a score from 0 to 100.</p></div>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="card border-0 shadow-sm h-100 card-hover"><div class="card-body text-center p-4"><span class="badge text-bg-success fs-6 mb-3">LOW</span><h5>0 - 39</h5><p class="text-muted mb-0">Keep checking conditions and prepare as needed.</p></div></div></div>
+        <div class="col-md-4"><div class="card border-0 shadow-sm h-100 card-hover"><div class="card-body text-center p-4"><span class="badge text-bg-warning fs-6 mb-3">MODERATE</span><h5>40 - 69</h5><p class="text-muted mb-0">Prepare the items relevant to your trip.</p></div></div></div>
+        <div class="col-md-4"><div class="card border-0 shadow-sm h-100 card-hover"><div class="card-body text-center p-4"><span class="badge text-bg-danger fs-6 mb-3">HIGH</span><h5>70 - 100</h5><p class="text-muted mb-0">Review your travel plan and prepare carefully.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Route -->
+  <section id="route" class="py-5">
+    <div class="container py-4">
+      <div class="row justify-content-center"><div class="col-lg-8">
+        <div class="card border-0 shadow-sm card-hover p-4 text-center">
+          <span class="feature-icon mx-auto mb-3"><i class="bi bi-signpost-split"></i></span>
+          <h3 class="fw-bold">Location &amp; Route</h3>
+          <p class="text-muted">Check your school location and travel route before you leave. Combine it with your weather risk level to decide when to go.</p>
+          <div><a class="btn btn-brand" href="https://www.google.com/maps/dir/?api=1&destination=University%20of%20Science%20and%20Technology%20of%20Southern%20Philippines%2C%20Cagayan%20de%20Oro" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill"></i> Open Location &amp; Route</a></div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-5">
+    <div class="container py-4 text-center">
+      <h2 class="fw-bold mb-4">Group 5 Researchers</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4"><div class="card border-0 shadow-sm p-4"><i class="bi bi-person-circle display-4 text-brand"></i><h5 class="mt-2 mb-0">Jarred D. Duero</h5></div></div>
+        <div class="col-md-4"><div class="card border-0 shadow-sm p-4"><i class="bi bi-person-circle display-4 text-brand"></i><h5 class="mt-2 mb-0">Angel May E. Guibelondo</h5></div></div>
+        <div class="col-md-4"><div class="card border-0 shadow-sm p-4"><i class="bi bi-person-circle display-4 text-brand"></i><h5 class="mt-2 mb-0">Princess Jewel Salon</h5></div></div>
+      </div>
+      <div class="alert alert-warning mt-5 mb-0 text-start"><i class="bi bi-exclamation-triangle-fill me-2"></i><b>Important:</b> SkyShield AI is a supplementary tool. It does not replace official advisories from PAGASA or local authorities.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>&copy; 2026 SkyShield AI. Group 5. For learning purposes.</span>
+      <div class="d-flex gap-3 fs-5"><a href="#features" class="text-light" aria-label="Features"><i class="bi bi-stars"></i></a><a href="#team" class="text-light" aria-label="Team"><i class="bi bi-people"></i></a></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
